@@ -1,0 +1,437 @@
+/*CSS Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, fieldset, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+a,img {
+	text-decoration:none;
+	border:none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background-color:#333333;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/**Fim CSS Reset**/
+#general {
+	width:1000px;
+	margin:auto;
+}
+/* Cabeçalho */
+
+#logo {
+	width:300px;
+	float:left;
+	padding:10px 0px;
+}
+
+/* Menu */
+#menu {
+	position: relative;
+	z-index: 10;
+	width:704px;
+	height:40px;
+	float:left;
+	background:url(../imagens/bg_menu.png);
+	margin-bottom: 12px;
+}
+#menu ul{
+	margin:9px 0 0 0;
+}
+#menu li{
+	height:20px;
+	float:left;
+	margin-top:4px;
+	border-right:1px #333 solid;
+}
+#menu a{
+	font-family:arial,verdana,"times new roman";
+	color:#CCC;
+	padding:11px 12px 10px 12px;
+	font-size:16px;
+	font-weight:bold;
+}
+#menu a:hover{
+	color:#FFF;
+}
+#confeccao {
+	width: 105px;
+}
+#surf {
+	width:55px;
+}
+#skate {
+	width: 63px;
+}
+#tenis {
+	width: 63px;
+}
+.dentro {
+	margin-top: 11px;
+	display: none;
+	background: #0694C8;
+	height: 65px;
+	width: 570px;
+	border-top: 2px solid #333;
+}
+#dentro li{
+	border: none;
+}
+#confeccao:hover .dentro{
+	display: block;
+}
+#surf:hover .dentro{
+	display: block;
+}
+#skate:hover .dentro{
+	display: block;
+}
+#tenis:hover .dentro{
+	display: block;
+}
+/* Campo de Busca */
+
+#busca {
+	width:250px;
+	height:40px;
+	margin-left:2px;
+	float:left;
+	background:url(../imagens/search_box.png) no-repeat;
+}
+#campoBusca {
+	margin:8px 0 0 9px;
+	padding-left:4px;
+	width:160px;
+	height:24px;
+	background:url(../imagens/campoBusca.png);
+	border:none;
+	outline-color:#bbb;
+	float:left;
+	background:#FFF;
+}
+#botaoBuscar {
+	padding-top:0px;
+	color:#002C3D;
+	float:left;
+	display:block;
+	margin-top:9px;
+	background-color:transparent;
+	font-size:18px;
+	border:none;
+	cursor:pointer;
+}
+#botaoBuscar:hover{
+	color:#113D4E;
+}
+
+/* Conteudo */
+
+#banner {
+	width:956px;
+	height:286px;
+	z-index: 1;
+	position: relative;
+}
+#destaque{
+	border-radius:7px 7px 7px 7px;
+	-moz-box-shadow: inset 0px 0px 6px #000;  
+    -webkit-box-shadow: inset 0px 0px 6px #000;  
+    box-shadow: inset 0px 0px 6px #000;
+	padding:10px;
+	width:936px;
+	height:auto;
+	float:left;
+	margin-bottom: 10px;
+	background:#FFF;
+}
+#destaque h1{
+	overflow: hidden;
+	margin:1px;
+	padding-bottom:2px;
+	font-size:25px;
+	font-family:calibri, arial,verdana;
+	color:#0477A1;
+	border-bottom:1px solid;
+}
+.boxs {
+	float:left;
+	border:10px solid #FFF;
+	margin:5px;
+	width:200px;
+	height:210px;
+}
+.boxs a{
+	padding: 20px;
+	width:160px;
+	height:170px;
+	display:block;
+	color:#0055a1;
+	font-family: calibri, verdana, arial;
+}
+.boxs span{
+	display: block;
+	margin-top:px;
+	width: 160px;
+	clear: both;
+}
+.boxs:hover{
+	border-color:#333;
+}
+.boxs:hover span {
+	color:#333;
+}
+.boxs img {
+	width:160px;
+	height:132px;
+}
+
+/* Rodapé */
+
+#midias {
+	float: left;
+}
+#midiaSocial {
+	width:360px;
+	height:290px;
+	float:left;
+	background:#FFF;
+}
+#videos {
+	width:340px;
+	height:220px;
+	float:left;
+	margin:0 30px;
+	background:#FFF;
+}
+#footer {
+	border-radius:10px 10px 6px 6px;
+	-moz-box-shadow: inset 0px 0px 8px #000;  
+    -webkit-box-shadow: inset 0px 0px 8px #000;  
+    box-shadow: inset 0px 0px 8px #000;
+	background: url(../imagens/bg_footer.png);
+	width:922px;
+	height:170px;
+	float:left;
+	clear: both;
+	font-size:19px;
+	color:#000026;
+	margin-top:15px;
+	padding: 15px;
+	font-family: calibri, verdana, arial;
+}	
+#footer h3{
+	font-family: trebuchet, calibri, arial;
+	font-weight: bold;
+	font-size:32px;
+	padding-bottom: 3px;
+	border-bottom:2px solid;
+}
+#footer #contatoFisico {
+	display: block;
+	margin-top:32px;
+	float: left;
+}
+#footer #contatoRemoto {
+	display: block;
+	float: left;
+	margin:32px 0 0 200px;
+}
+#footer address {
+	color:#000;
+	font-size:23px;
+}
+#footer .tituloContato {
+	font-weight: bold;
+	margin-bottom: 7px;
+	font-size: 20px;
+}
+#footer span{
+	display: block;
+	font-size:16px;
+}
+#footer #developer {
+	float: left;
+	color:#000;
+	margin-top: 125px;
+}
+/* Contato */
+#contato {
+	border-radius:5px 5px 5px 5px;
+	-moz-box-shadow: inset 0px 0px 4px #000;  
+    -webkit-box-shadow: inset 0px 0px 4px #000;  
+    box-shadow: inset 0px 0px 4px #000;
+	clear: both;
+	width:953px;
+	margin:13px 0;
+	padding-top:30px;
+	background-color:#CCC;
+}
+#contato legend {
+	color:#BB2017;	
+	font-family:calibri, verdana, arial;
+	font-size:35px;
+	width:100%;
+	border-bottom:2px solid;
+	margin-bottom:20px;
+}
+#contato form {
+	padding:10px 40px 40px 40px;
+	width:874px;
+}
+#contato label{
+	font-family:calibri, arial,verdana;
+	margin-top:2px;
+}
+#contato .campo{
+	outline-color:#CCC;
+	display:block;
+	width:300px;
+	margin-top:5px;
+	border: 1px solid #BBB;  
+    height:30px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    -moz-box-shadow: inset 0px 0px 3px #eee;  
+    -webkit-box-shadow: inset 0px 0px 3px #eee;  
+    box-shadow: inset 0px 0px 3px #eee;
+	padding-left:3px;
+}
+#contato #campoEstado{
+	width:200px;
+}
+#contato #campoMensagem {
+	width:300px;
+	height:100px;
+	resize:none;
+}
+#contato #campoUF {
+	width:40px;
+}
+#contato #botaoMensagem {
+	width:80px;
+	height:40px;
+	margin-top:10px;
+	cursor:pointer;
+	font-size:15px;
+}
+#contato span {
+	display:block;
+	width:280px;
+	margin:auto;
+	padding:10px;
+	color:#111;
+	font-weight:bold;
+    -moz-box-shadow: 0px 0px 4px 1px #000;  
+    -webkit-box-shadow: 0px 0px 4px 1px #000;  
+    box-shadow: 0px 0px 4px 1px #000;
+}
+#contato span b{
+	color:#711;
+}
+#localizacao{
+	margin:-370px 0 0 400px; 
+	padding-bottom:35px;
+}
+
+/* Detalhes produto */
+
+#detalhe .descricao{
+	width:480px;
+}
+#detalhe img {
+	margin:10px;
+	border:1px solid #CCC;
+	padding:20px;
+	width:350px;
+	height:350px;
+	float:left;
+}
+#detalhe strong {
+	color:#0055A1;
+	font-size:17px;
+	font-family:calibri, verdana, arial;
+}
+#detalhe .descricao {
+	line-height:25px;
+	margin:10px;
+	float:left;
+}
+#detalhe #preco {
+	font-weight:bold;
+	font-size:30px;
+}
+#detalhe span {
+	font-size:27px;
+}
+#paginacao {
+	width:200px;
+	margin: auto;
+	clear:both;
+	padding:10px 0;
+}
+#paginacao a{
+	padding:5px 7px;
+	margin:3px;
+	font-family: calibri, arial, verdana;
+	font-weight: bold;
+	background:#000;
+	color:#FFF;
+}
+#paginacao a:hover{
+	background: #999;
+	color:#000;
+}
+#galeria {
+	width: 500px;
+	height:200px;
+}
+#galeria img {
+	margin-right: 2px;
+	width: 47px;
+	height: 47px;
+}
+#galeria img:hover {
+	border:1px solid #700;
+}
+#relacionado {
+	color: #707;
+	display: block;
+	clear:both;
+	padding-top: 20px;
+}
+noscript {
+	display: block;
+	padding: 10px;
+	font-size:20px;
+	width: 800px;
+	height: 20px;
+	margin: auto;
+	background: #FFF;
+}
