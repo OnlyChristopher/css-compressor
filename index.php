@@ -18,7 +18,7 @@
 	</style>
 </head>
 <body>
-	<a href="" id="fork" title="Fork me on GitHub"><img src="fork.png" alt="Fork me on Github" title="fork me on github"/></a>
+	<a href="https://github.com/arthurfigueiredo/css-compressor" target="_blank" id="fork" title="Fork me on GitHub"><img src="fork.png" alt="Fork me on Github" title="fork me on github"/></a>
 	<h1>CSS Compressor, made with PHP :)</h1>
 	<ol>
 		<li>Put your stylesheets in <strong>css</strong> folder;</li>
